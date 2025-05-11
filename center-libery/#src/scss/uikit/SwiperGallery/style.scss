@@ -1,0 +1,52 @@
+.swiper-gallery { 
+    position: relative;
+    .slideprev, .slidenext { 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        left: 24px;
+        width: 32px;
+    }
+
+    .slidenext { 
+        right: 24px;
+        left: unset;
+    }
+
+    .default-swiper {
+        width: 100%;
+        margin-bottom: 24px;
+        .swiper-slide { 
+            width: 100%;
+            height: 100%;
+            img { 
+                width: 100%;
+                height: 396px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+    }
+
+	.swiper-thumbs { 
+        width: 100%;
+		.swiper-wrapper { 
+			.swiper-slide { 
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                display: block;
+                max-width: 168px;
+                margin-right: 24px;
+                img { 
+                    width: 100%;
+                    height: 126px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+			}
+		}
+	}
+}

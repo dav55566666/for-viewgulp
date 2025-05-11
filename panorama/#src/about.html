@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('./scss/components/Header/_head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('./scss/components/Header/_header.html',{})
+			<main class="page">
+				@@include('./scss/components/About/_index.html',{})
+				@@include('./scss/components/Advantages/_index.html',{})
+				@@include('./scss/components/Contacts/_index.html',{})
+			</main>
+			@@include('./scss/components/Footer/_footer.html',{})
+		</div>
+		@@include('./scss/components/Footer/_js.html',{})
+	</body>
+</html>

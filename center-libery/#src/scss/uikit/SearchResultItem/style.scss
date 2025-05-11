@@ -1,0 +1,161 @@
+.search-result-item { 
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    @media(max-width: $md3) {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        background: #F5F5F5;
+    }
+	.search-result-item__img { 
+        width: 100%;
+        max-width: 200px;
+        position: relative;
+        display: block;
+		img { 
+            border-radius: 10px;
+            width: 100%;
+            object-fit: cover;
+		}
+
+        .book-detail {
+            position: absolute;
+            top: 40px;
+            left: 4px;
+            width: 100%;
+            padding: 0 40px;
+            .author {
+                color: var(--White, #000);
+                font-family: "Roboto Condensed";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 140%;
+                text-align: center;
+                display: block;
+                margin-bottom: 4px;
+            }
+            .title { 
+                color: var(--White, #000);
+                font-family: "Roboto Condensed";
+                font-size: 10px;
+                text-align: center;
+                font-style: normal;
+                font-weight: 400;
+                display: block;
+            }
+        }
+	}
+
+	.search-result-item__content { 
+        width: 100%;
+		h4 { 
+            margin-bottom: 16px;
+            color: var(--Black-text, #22120A);
+            font-family: Oswald;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%;
+		}
+
+		.search-result-item__details { 
+            width: 100%;
+            margin-bottom: 16px;
+			.date, .location, .entrance, .detail-span { 
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 8px;
+                color: var(--Black-text, #22120A);
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 130%;
+                margin-bottom: 10px;
+                max-width: 260px;
+                svg {
+                    min-width: 24px;
+                }
+                &:last-child { 
+                    margin-bottom: 0;
+                }
+			}
+
+            .available { 
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 8px;
+                color: #22120A;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                margin-bottom: 16px;
+                .year {
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                    border-radius: 100px;
+                    background: var(--Light-blue, #6992D8);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--White, #FFF);
+                    font-family: Oswald;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%;  
+                }
+            }
+            .location {
+                color: var(--Black-text, #22120A);
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+		}
+
+		.search-result-item__description { 
+            color: var(--Grey-text, #636363);
+            font-family: "Roboto Condensed";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+            margin-bottom: 20px;
+		}
+
+		.more { 
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+            color: var(--Black-text, #22120A);
+            font-family: Oswald;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; 
+		}
+
+        .flex {
+            gap: 16px;
+            align-items: center;
+            justify-content: flex-start;
+            .button {
+                max-width: 200px;
+            }
+        }
+	}
+}

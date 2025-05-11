@@ -1,0 +1,20 @@
+.number-list { 
+    width: 100%;
+    padding: 60px 20px;
+	.number-list__container { 
+		.section-title { 
+            margin-bottom: 30px;
+		}
+
+		.number-list__result { 
+            margin-bottom: 40px;
+            .number-item { 
+                margin-bottom: 16px;
+                border-radius: 10px;
+                &:last-child { 
+                    margin-bottom: 0px;
+                }
+            }
+		}
+	}
+}

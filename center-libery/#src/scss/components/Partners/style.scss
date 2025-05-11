@@ -1,0 +1,60 @@
+.partners { 
+    width: 100%;
+    padding: 40px 20px 80px;
+    @media(max-width: $md4) {
+        padding: 26px 20px 20px;
+    }
+	.partners__container { 
+		.partners__title { 
+            width: 100%;
+            margin-bottom: 32px;
+			h2 { 
+                color: var(--Black-text, #22120A);
+                font-family: Oswald;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                @media(max-width: $md3) {
+                    font-size: 24px;
+                }
+			}
+		}
+
+		.partners__swiper { 
+            width: 100%;
+            position: relative;
+            .slideprev, .slidenext { 
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 10;
+                cursor: pointer;
+                left: 24px;
+                width: 32px;
+                z-index: 2;
+            }
+
+            .slidenext { 
+                right: 24px;
+                left: unset;
+            }
+
+			.swiper { 
+                width: 100%;
+                z-index: 1;
+				.swiper-wrapper { 
+					.swiper-slide { 
+                        margin-right: 24px;
+                        max-width: max-content;
+                        filter: grayscale(100%);
+                        transition: all 0.3s ease;
+                        &:hover {
+                            filter: grayscale(0%);
+                        }
+					}
+				}
+			}
+		}
+	}
+}

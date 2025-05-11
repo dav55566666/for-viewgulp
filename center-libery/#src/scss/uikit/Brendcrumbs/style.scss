@@ -1,0 +1,33 @@
+.brendcrumbs {
+      width: 100%;
+      padding: 16px 20px 0;
+
+      .brendcrumbs__container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+
+            a {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  gap: 8px;
+                  color: var(--Black-text, #22120A);
+                  font-family: "Roboto Condensed";
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 130%;
+            }
+
+            span {
+                  color: var(--Middle-grey, #ACACAC);
+                  font-family: "Roboto Condensed";
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 130%;
+            }
+      }
+}

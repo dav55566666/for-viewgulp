@@ -1,0 +1,275 @@
+.libery-children { 
+    width: 100%;
+    padding: 32px 20px 40px;
+	.libery-children__container { 
+		.flex { 
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            @media(max-width: $md1)  {
+                gap: 20px;
+            }
+            @media(max-width: $md3) {
+                flex-direction: column-reverse;
+            }
+			.libery-children__left { 
+                width: 100%;
+                max-width: 1130px;
+                @media(max-width: $md1) {
+                    max-width: 800px;
+                }
+                @media(max-width: $md2) {
+                    max-width: 760px;
+                }
+                @media(max-width: $md3) {
+                    max-width: unset;
+                }
+				h1 { 
+                    color: var(--Black-text, #22120A);
+                    font-family: Oswald;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 26px;
+                    @media(max-width: $md3) {
+                        margin-bottom: 24px;
+                        font-size: 24px;
+                    }
+				}
+
+				.libery-children__top { 
+                    width: 100%;
+                    margin-bottom: 80px;
+                    @media(max-width: $md3) {
+                        margin-bottom: 40px;
+                    }
+					.grid { 
+                        width: 100%;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 24px 40px;
+                        margin-bottom: 24px;
+                        @media(max-width: $md1)  {
+                            gap: 20px;
+                        }
+                        @media(max-width: $md3) {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                        @media(max-width: $md5) {
+                            grid-template-columns: repeat(1, 1fr);
+                        }
+						.libery-children__item { 
+                            width: 100%;
+                            border-radius: 10px;
+                            border: 1px solid var(--Light-grey, #ECE9E9);
+                            background: var(--White, #FFF);
+                            position: relative;
+                            padding: 24px;
+							.overlay { 
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                opacity: 0;
+                                transition: all 0.5s;
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                }
+								img { 
+                                    width: 100%;
+                                    height: 100%;
+								}
+							}
+
+							.icon { 
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 8px;
+                                position: relative;
+                                svg {
+                                    path {
+                                        transition: all 0.5s;
+                                    }
+                                }
+							}
+
+							.text { 
+                                width: 100%;
+                                position: relative;
+								h5 { 
+                                    color: var(--Black-text, #22120A);
+                                    font-family: Oswald;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 140%; 
+                                    margin-bottom: 8px;
+                                    transition: all 0.5s;
+								}
+
+								span { 
+                                    color: var(--Black-text, #22120A);
+                                    font-family: "Roboto Condensed";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    transition: all 0.5s;
+                                    line-height: 140%; 
+								}
+							}
+
+                            &:hover {
+                                .overlay {
+                                    opacity: 1;
+                                }
+                                .icon {
+                                    svg {
+                                        path {
+                                            stroke: #fff!important;
+                                        }
+                                    }
+                                }
+                                .text {
+                                    h5 {
+                                        color: #fff;
+                                    }
+                                    span {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+						}
+					}
+
+					.button { 
+                        max-width: 236px;
+                        margin: 0 auto;
+					}
+				}
+
+				.libery-children__about { 
+                    width: 100%;
+                    margin-bottom: 80px;
+					h2 { 
+                        color: var(--Black-text, #22120A);
+                        font-family: Oswald;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-bottom: 32px;
+					}
+
+					.flex { 
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        gap: 20px;
+                        @media(max-width: $md3) {
+                            flex-direction: column;
+                        }
+						.text { 
+                            width: 100%;
+                            max-width: 612px;
+                            @media(max-width: $md3) {
+                                max-width: 100%;
+                            }
+							p { 
+                                color: var(--Grey-text, #636363);
+                                font-family: "Roboto Condensed";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 140%; 
+                                margin-bottom: 16px;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+							}
+						}
+
+						.img { 
+                            width: 100%;
+                            max-width: 480px;
+                            @media(max-width: $md1) {
+                                max-width: 380px;
+                            }
+                            @media(max-width: $md2) {
+                                max-width: 320px;
+                            }
+                            @media(max-width: $md3) {
+                                max-width: 100%;
+                            }
+                            .swiper-gallery .default-swiper .swiper-slide img {
+                                height: 268px;
+                            }
+                            .swiper-thumbs  { 
+                                width: 100%;
+                                .swiper-slide { 
+                                    max-width: 142px;
+                                    img {
+                                        height: 102px;
+                                    }
+                                }
+                            }
+						}
+					}
+				}
+
+				.libery-children__books { 
+                    width: 100%;
+					h2 { 
+                        color: var(--Black-text, #22120A);
+                        font-family: Oswald;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-bottom: 32px;
+                        @media(max-width: $md3) {
+                            margin-bottom: 24px;
+                            font-size: 24px;
+                        }
+					}
+
+					.swiper { 
+                        width: 100%;
+						.slideprev, .slidenext { 
+                            position: absolute;
+                            top: 42%;
+                            transform: translateY(-50%);
+                            z-index: 10;
+                            cursor: pointer;
+                            left: 24px;
+                            width: 32px;
+                        }
+    
+                        .slidenext { 
+                            right: 24px;
+                            left: unset;
+                        }
+
+						.swiper-wrapper { 
+							.swiper-slide { 
+                                width: 100%;
+                                max-width: 190px;
+                                margin-right: 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

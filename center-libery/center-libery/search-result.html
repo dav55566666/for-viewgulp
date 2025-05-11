@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+  <title>Централизованная библиотечная система ивановского округа</title>
+  <meta charset="UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/img/favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/img/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/img/favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+    <div class="header__top">
+        <div class="header__container container">
+            <a href="/" class="logo">
+                <img src="/img/logo.svg" alt="">
+                <span>Централизованная <br> библиотечная система <br> ивановского округа</span>
+            </a>
+            <div class="header__top-contacts flex">
+                <a href="" class="contact-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <use xlink:href="/img/sprite.svg#icon-wp"></use>
+                    </svg>
+                    +7(996)460-02-06
+                </a>
+                <a href="" class="contact-link">График работы</a>
+                <a href="" class="contact-link">Контакты</a>
+                <div class="header__top-bts flex">
+                    <a href="" class="button no-bg">Продлить книгу</a>
+                    <a href="how-to-join.html" class="button">Стать читателем</a>
+                </div>
+            </div>
+            <button class="burger-btn">
+                <span></span>                 
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="header__container container">
+            <ul class="menu">
+                <li><a href="">О нас </a></li>
+                <li><a href="">Библиотеки</a></li>
+                <li><a href="events.html">Афиша</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">Краеведение</a></li>
+                <li><a href="libery-for-children.html">Бибилиотека детям</a></li>
+                <li><a href="">Руководителям</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__search">
+        <div class="header__container container">
+            <div class="flex">
+                <label for="" class="search-in">
+                    <select name="" id="">
+                        <option value="">по каталогу</option>
+                        <option value="">Библиотека 1</option>
+                        <option value="">Библиотека 2</option>
+                        <option value="">Библиотека 3</option>
+                    </select>
+                </label>
+                <label class="search-input"><input type="text" placeholder="Поиск по сайту"></label>
+                <button class="button">
+                    Поиск
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.37624 17.7525C6.89545 17.7525 4.7961 16.8931 3.07821 15.1743C1.36031 13.4555 0.500911 11.3561 0.500001 8.87624C0.49909 6.39636 1.35849 4.29701 3.07821 2.57821C4.79792 0.859403 6.89727 0 9.37624 0C11.8552 0 13.955 0.859403 15.6756 2.57821C17.3963 4.29701 18.2552 6.39636 18.2525 8.87624C18.2525 9.87767 18.0932 10.8222 17.7745 11.7098C17.4559 12.5974 17.0235 13.3826 16.4772 14.0654L24.1245 21.7127C24.3748 21.963 24.5 22.2816 24.5 22.6686C24.5 23.0555 24.3748 23.3741 24.1245 23.6245C23.8741 23.8748 23.5555 24 23.1686 24C22.7816 24 22.463 23.8748 22.2127 23.6245L14.5654 15.9772C13.8826 16.5235 13.0974 16.9559 12.2098 17.2745C11.3222 17.5932 10.3777 17.7525 9.37624 17.7525ZM9.37624 15.0213C11.0832 15.0213 12.5344 14.4241 13.7297 13.2297C14.925 12.0353 15.5222 10.5841 15.5213 8.87624C15.5204 7.16836 14.9232 5.71767 13.7297 4.52415C12.5362 3.33064 11.085 2.73297 9.37624 2.73115C7.66745 2.72933 6.21676 3.327 5.02415 4.52415C3.83155 5.72131 3.23388 7.17201 3.23115 8.87624C3.22842 10.5805 3.82609 12.0316 5.02415 13.2297C6.22222 14.4278 7.67292 15.025 9.37624 15.0213Z" fill="white"/>
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobile">
+        <ul class="menu">
+            <li><a href="">О нас </a></li>
+            <li><a href="">Библиотеки</a></li>
+            <li><a href="events.html">Афиша</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Краеведение</a></li>
+            <li><a href="libery-for-children.html">Бибилиотека детям</a></li>
+            <li><a href="">Руководителям</a></li>
+        </ul>
+        <div class="header__mobile-bts">
+            <a href="" class="button no-bg">Продлить книгу</a>
+            <a href="how-to-join.html" class="button">Стать читателем</a>
+        </div>
+    </div>
+</header>
+			<main class="page">
+                <div class="brendcrumbs">
+                    <div class="brendcrumbs__container container">
+                        <a href="">
+                            Главная
+                            <svg width="5" height="8" viewBox="0 0 5 8" >
+                                <use xlink:href="/img/sprite.svg#brendcrumbs-arrow-icon"></use>
+                            </svg>             
+                        </a>
+                        <span>Афиша</span>
+                    </div>
+                </div>
+				<section class="search-result">
+    <div class="search-result__container container">
+        <div class="search-result__content">
+            <h1>Результаты поиска</h1>
+            <div class="search-result__list">
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="search-result-item">
+    <div class="search-result-item__img">
+        <img src="/img/book-cover.png" alt="">
+        <div class="book-detail">
+            <span class="author">
+                Пушкин, Александр Сергеевич
+            </span>
+            <span class="title">Сочинения А.С. Пушкина : Сочинения Александра Сергеевича...</span>
+        </div>
+    </div>
+    <div class="search-result-item__content">
+        <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>   
+        <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина : [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+        </div>
+        <div class="flex">
+            <button class="more open-book-modal">
+                Подробнее
+                <svg width="19" height="25" viewBox="0 0 19 25">
+                    <use href="/img/sprite.svg#link-arrow-icon"></use>
+                </svg>
+            </button>
+            <button class="button">
+                Забронировать
+            </button>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="pagination">
+                <div class="page-size">
+                    <label for="" class="input-text">
+                        <span class="input-title">Мероприятий на странице</span>
+                        <select class="input">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="pages">
+                    <a href="" class="prev">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 7L9 10L12 13" stroke="#22120A" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </a>
+                    <div class="flex">
+                        <a href="" class="active">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                        <span>...</span>
+                        <a href="">123</a>
+                    </div>
+                    <a href="" class="next">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L10 10L7 7" stroke="#22120A" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="libery-today">
+    <div class="libery-today__title">
+        <h4>Библиотека сегодня</h4>
+    </div>
+    <div class="libery-today__content">
+        <div class="libery-today__item">
+            <div class="overlay">
+                <img src="/img/Property 1=Variant2.png" alt="">
+            </div>
+            <span class="icon">
+                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M62.4542 12.604H48.349C46.7011 12.604 45.3652 13.9399 45.3652 15.5878V93.8092C45.3652 95.4571 46.7011 96.793 48.349 96.793H62.4542C64.1021 96.793 65.4379 95.4571 65.4379 93.8092V15.5878C65.4379 13.9399 64.1021 12.604 62.4542 12.604Z" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M80.1245 33.3424L69.7046 35.1797C68.4881 35.3942 67.6758 36.5543 67.8903 37.7708L78.0781 95.5484C78.2926 96.7649 79.4527 97.5772 80.6692 97.3627L91.0891 95.5254C92.3056 95.3109 93.1179 94.1509 92.9034 92.9343L82.7156 35.1567C82.5011 33.9402 81.341 33.1279 80.1245 33.3424Z" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M69.4922 44.8755L74.4032 44.0093" stroke="#6992D8" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M45.3652 87.1451H65.4379M45.3652 81.3335H65.4379M45.3675 76.042H65.4379" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28.7133 26.9449L17.1071 91.8721C16.8171 93.4943 17.8971 95.0444 19.5192 95.3344L29.5625 97.1297C31.1847 97.4197 32.7348 96.3397 33.0248 94.7175L44.631 29.7903C44.921 28.1681 43.841 26.618 42.2188 26.328L32.1755 24.5327C30.5534 24.2428 29.0033 25.3227 28.7133 26.9449Z" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.666 39.0845L41.4862 41.7291" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <h5>Библиотечный киоск</h5>
+            <p>У нас в киоске: книги, подарки, товары для чтения</p>
+        </div>
+        <div class="libery-today__item">
+            <div class="overlay">
+                <img src="/img/Property 1=Hover (2).png" alt="">
+            </div>
+            <span class="icon">
+                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M89.8585 26.6729L93.7017 26.1825C96.211 25.8616 99.6875 28.3206 99.6875 30.8529V80.8341C99.6875 84.6429 97.4806 85.7979 92.8698 86.4968L55 92.0977L17.1302 86.4968C12.5194 85.7979 10.3125 84.6429 10.3125 80.8341V30.8529C10.3125 28.3206 13.789 25.8593 16.2983 26.1825L19.014 26.5285M84.3425 78.5997C87.3698 77.7702 89.8608 75.7947 89.8608 70.9639V23.2697C89.8608 19.4656 87.3858 16.9333 81.4573 18.3243L54.434 24.6562L27.4152 18.3243C21.505 16.8393 19.0094 19.4656 19.0094 23.2697V70.9639C19.0094 75.7947 21.5004 77.7702 24.5277 78.5997L54.434 86.7902L84.3425 78.5997Z" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <h5>Издательство</h5>
+            <p>Поможем вам издать вашу книгу: от рукописи до готового тиража. А так же:</p>
+            <ul>
+                <li>
+                    <p>Ксерокопирование;</p>
+                </li>
+                <li>
+                    <p>Печать, брошюр, визиток;</p>
+                </li>
+                <li>
+                    <p>Сканирование;</p>
+                </li>
+                <li>
+                    <p>Распечатка с электронных носителей;</p>
+                </li>
+                <li>
+                    <p>Ламинирование</p>
+                </li>
+            </ul>
+        </div>
+        <div class="libery-today__item">
+            <div class="overlay">
+                <img src="/img/Property 1=hover (1).png" alt="">
+            </div>
+            <span class="icon">
+                <svg width="110" height="111" viewBox="0 0 110 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.5003 74.2831C39.6693 69.576 50.9534 65.5312 59.577 62.9531M36.1561 61.7844C41.7111 59.9969 47.1722 57.5448 52.6791 57.0269M36.1561 61.7844C26.2126 64.9881 23.0822 70.2314 30.498 74.2831C19.5324 79.9092 11.5872 86.4908 14.823 92.6508C21.242 104.863 66.8943 93.996 89.7605 73.7515C104.402 60.7852 90.1684 51.0342 75.417 58.2002M36.1561 61.7844C31.252 58.0215 38.127 53.4312 47.3578 51.4283C47.6328 48.7471 47.5732 46.0429 47.1722 43.38M47.1722 43.38C46.8079 40.9412 46.1173 38.5626 45.1189 36.3079M47.1722 43.38C23.5841 57.8358 18.7005 32.9071 32.7209 20.6971C49.8534 5.77832 69.5366 13.9504 54.6361 33.0881" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <h5>Игромания</h5>
+            <p>Разнообразные игры для каждого — от классики настольных игр до современных PS5</p>
+        </div>
+        <div class="libery-today__item">
+            <div class="overlay">
+                <img src="/img/Property 1=Hover (3).png" alt="">
+            </div>
+            <span class="icon">
+                <svg width="110" height="111" viewBox="0 0 110 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 73.8446L69.928 74.6943C66.9847 68.8722 58.8702 65.952 53.097 73.9213C38.8266 71.0195 29.9122 65.3385 3 75.3906C5.90636 71.0563 6.53726 66.2802 7.38989 61.5532L37.1952 60.3906" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M73 26.3385C70.6382 25.1504 68.9222 24.7386 63.7003 20.1098C68.3106 30.66 64.5807 48.8392 59.7622 68.6564M53.7285 36.3184C53.3041 31.376 53.0774 26.6047 50.0803 19.3906C45.4331 21.2282 40.5381 20.4235 35.7302 20.509C48.417 31.8576 51.7937 51.4815 56.7071 69.7368M40.1823 45.2623L26.4964 29.7697L16 40.472C31.7103 45.7914 43.9544 57.1526 54.543 71.3906" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <h5>Библиотечные туры</h5>
+            <p>Разнообразные игры для каждого — от классики настольных игр до современных PS5</p>
+        </div>
+        <div class="libery-today__item">
+            <div class="overlay">
+                <img src="/img/Property 1=Hover.png" alt="">
+            </div>
+            <span class="icon">
+                <svg width="110" height="111" viewBox="0 0 110 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.5825 33.0767C16.9572 33.4246 15.4917 34.2981 14.4123 35.5621C13.3329 36.8261 12.6997 38.4103 12.6105 40.0701C12.5213 41.7298 12.9811 43.3728 13.9189 44.7452C14.8566 46.1175 16.2201 47.143 17.7988 47.6631L57.3461 59.2085L97.3952 47.7685" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.5825 47.9565C16.9572 48.3045 15.4917 49.178 14.4123 50.4419C13.3329 51.7059 12.6997 53.2902 12.6105 54.9499C12.5213 56.6097 12.9811 58.2527 13.9189 59.625C14.8566 60.9974 16.2201 62.0229 17.7988 62.543L57.3461 74.0884L97.3952 62.6484" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.5822 62.9991C16.9578 63.3478 15.4934 64.2215 14.4148 65.4852C13.3363 66.7489 12.7036 68.3325 12.6144 69.9915C12.5253 71.6505 12.9846 73.2928 13.9215 74.6648C14.8584 76.0369 16.2208 77.0624 17.7985 77.5832L57.3458 89.1287L97.3949 77.6887V33.008M97.3949 33.008L57.3458 21.6528L18.5204 33.0493L57.3458 44.448L97.3949 33.008Z" stroke="#6992D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <h5>Рабочее пространство</h5>
+            <p>Командная работа, генерация идей и воплощение проектов в библиотеке. Библиотека — это не только книги, но и помощь в развитии бизнеса! Предоставляем рабочее пространство и консультации</p>
+        </div>
+    </div>
+    <button class="togle-libery-today">
+        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16.1181" cy="16.1173" r="15.5" transform="rotate(89.5785 16.1181 16.1173)" fill="white" stroke="#ECE9E9"/>
+            <path d="M19.3124 15.2942L16.136 18.5177L12.9126 15.3413" stroke="#0C49B1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>            
+    </button>
+</div>
+    </div>
+</section>
+<div class="book-modal">
+  <div class="book-modal__container">
+    <button class="close-btn">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 6L6 18"
+          stroke="#22120A"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6 6L18 18"
+          stroke="#22120A"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <div class="book-modal__content">
+      <div class="search-result-item">
+        <div class="search-result-item__content">
+          <h4>Пушкин, Александр Сергеевич (1799-1837).</h4>
+          <div class="search-result-item__details">
+            <span class="date">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.8 5.59961H7.2C5.43269 5.59961 4 7.0323 4 8.79961V16.7996C4 18.5669 5.43269 19.9996 7.2 19.9996H16.8C18.5673 19.9996 20 18.5669 20 16.7996V8.79961C20 7.0323 18.5673 5.59961 16.8 5.59961Z"
+                  stroke="#6992D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.8 4V7.2M15.2 4V7.2M4 10.4H20"
+                  stroke="#6992D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              2025-05-01
+            </span>
+            <span class="location">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.4 12.8C13.7255 12.8 14.8 11.7255 14.8 10.4C14.8 9.07452 13.7255 8 12.4 8C11.0745 8 10 9.07452 10 10.4C10 11.7255 11.0745 12.8 12.4 12.8Z"
+                  stroke="#6992D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.4 4C10.7026 4 9.07475 4.67428 7.87452 5.87452C6.67428 7.07475 6 8.70261 6 10.4C6 11.9136 6.3216 12.904 7.2 14L12.4 20L17.6 14C18.4784 12.904 18.8 11.9136 18.8 10.4C18.8 8.70261 18.1257 7.07475 16.9255 5.87452C15.7253 4.67428 14.0974 4 12.4 4Z"
+                  stroke="#6992D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              МБУК «ЦБС Ивановского муниципального округа»
+            </span>
+            <span class="available">
+              <span class="year">12+</span>
+              Возрастное ограничение.
+            </span>
+            <span class="detail-span">
+              Издательство:
+              <span> МБУК «ЦБС Ивановского муниципального округа» </span>
+            </span>
+            <span class="detail-span">
+              Автор:
+              <span>Пушкин, Александр Сергеевич</span>
+            </span>
+          </div>
+          <div class="search-result-item__description">
+            Сочинения А.С. Пушкина : Сочинения Александра Сергеевича Пушкина :
+            [Т. 1-10]. - 3-е изд. - Санкт-Петербург : А.С. Суворин. - 10 т.; 15.
+          </div>
+          <div class="search-result-item__description">
+            Общие примечания Экз. РНБ (Пушкин/1-36): 2-й экз. т. 3-9 в 3-х
+            переплетах NLR: Пушкин/1-36
+          </div>
+          <div class="flex">
+            <button class="button">Забронировать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+				<section class="follow-news">
+    <div class="follow-news__container container">
+        <div class="follow-news__box">
+            <div class="follow-news__text">
+                <h2>Следите за новостями!</h2>
+                <p>Подписывайтесь на наш канал в Телеграм и сообщество Вконтакте, чтобы быть в курсе новостей и мероприятий первыми!</p>
+                <div class="flex">
+                    <a href="" class="button">
+                        Читайте нас в Telegram!
+                        <svg width="37" height="37" viewBox="0 0 37 37">
+                            <use href="/img/sprite.svg#telegram-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="button">
+                        Мы Вконтакте!
+                        <svg width="37" height="37" viewBox="0 0 37 37">
+                            <use href="/img/sprite.svg#vk-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <img src="/img/image 182 (1).png" alt="" class="follow-news__img-mogbile">
+            <div class="follow-news__img">
+                <img src="/img/follow-news.png" alt="">
+                <img src="/img/follow-news2.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+			</main>
+			<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top">
+            <a href="/" class="logo">
+                <img src="/img/logo.svg" alt="">
+                <span>Централизованная <br> библиотечная система <br> ивановского округа</span>
+            </a>
+            <a href="" class="button">Стать читателем</a>
+        </div>
+        <div class="footer__center">
+            <div class="footer__center-item">
+                <ul>
+                    <li><a href="">О библиотеке</a></li>
+                    <li><a href="events.html">Афиша</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="">Проекты</a></li>
+                    <li><a href="publishing.html">Издательство</a></li>
+                </ul>
+            </div>
+            <div class="footer__center-item">
+                <ul>
+                    <li><a href="libery-for-children.html">Библиотека детям</a></li>
+                    <li><a href="">Краеведение</a></li>
+                    <li><a href="">Методическая копилка</a></li>
+                    <li><a href="">Конкурсы и игры</a></li>
+                </ul>
+            </div>
+            <div class="footer__center-item">
+                <ul>
+                    <li><a href="">Партнёры</a></li>
+                    <li><a href="">Противодействие коррупции</a></li>
+                    <li><a href="">Оценка качества услуг</a></li>
+                    <li><a href="">Обратная связь</a></li>
+                    <li><a href="">Библиотечные фонды</a></li>
+                </ul>
+            </div>
+            <div class="footer__center-item">
+                <ul>
+                    <li><span>Режим работы</span></li>
+                    <li><span>Пн.- Пт.: с 9:00 - 17:00</span></li>
+                    <li><span>Пн.- Пт.: с 9:00 - 17:00</span></li>
+                    <li><span>Последняя среда месяца — санитарный день</span></li>
+                </ul>
+            </div>
+            <div class="footer__center-item">
+                <ul>
+                    <li>
+                        <a href="" class="phone">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use href="/img/sprite.svg#white-wp-icon"></use>
+                            </svg>
+                            +7(996)460-02-06
+                        </a>
+                    </li>
+                    <li><a href="">ivmunlib@mail.ru</a></li>
+                    <li><span>Будьте в курсе новостей:</span></li>
+                    <li class="soc">
+                        <a href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use href="/img/sprite.svg#white-vk-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="23" height="24" viewBox="0 0 23 24">
+                                <use xlink:href="img/sprite.svg#rutube-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use href="/img/sprite.svg#white-tg-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="">Амурская область, с. Ивановка, ул. Ленина, 164</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="">Политика конфиденциальности</a>
+            <div class="stats">
+                <span>1349</span>
+                <span>786</span>
+                <span>708</span>
+                <span class="icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20">
+                        <use href="/img/sprite.svg#arrow-up-right-icon"></use>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://wowjs.uk/dist/wow.min.js"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+<script>new WOW().init();</script>
+	</body>
+</html>

@@ -1,0 +1,266 @@
+:root {
+	--color-white: #fff;
+	--color-black: #000;
+	--color-mist-gray: #EAEAEA;
+	--color-deep-ocean: #122329;
+	--color-golden-glow: #FFD171;
+	--color-midnight-teal: #172B33;
+	--color-slate-ink: #2B313E;
+	--color-ivory-dust: #F0EDE0;
+	--color-storm-black: #0C181C;
+	--color-marine-shadow: #1F3E48;
+	--color-silver-veil: #C9C9C9;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	animation-duration: 1s;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html {
+	font-size: #{$fontSize + px};
+}
+html,
+body {
+	height: 100%;
+	min-width: $minWidth;
+}
+body {
+	line-height: 1;
+	font-family: $fontFamily;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: $fontFamily;
+	font-size: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+	background-color: inherit;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+
+.flex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	&.center {
+		justify-content: center;
+		align-items: center;
+	}
+	&.between {
+		justify-content: space-between;
+	}
+	&.gap-10 {
+		gap: 10px;
+	}
+	&.gap-20 {
+		gap: 20px;
+	}
+	&.gap-30 {
+		gap: 30px;
+	}
+	&.gap-40 {
+		gap: 40px;
+	}
+	&.gap-50 {
+		gap: 50px;
+	}
+}
+
+.grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	&.column-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	&.column-4 {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	&.column-5 {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	&.gap-10 {
+		grid-gap: 10px;
+	}
+	&.gap-20 {
+		grid-gap: 20px;
+	}
+	&.gap-30 {
+		grid-gap: 30px;
+	}
+	&.gap-40 {
+		grid-gap: 40px;
+	}
+}
+
+.contact-link {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: max-content;
+	gap: 10px;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.soc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 14px;
+	max-width: max-content;
+}
+
+.swiper-pagination {
+	width: 100%;
+	inset: 0;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4px;
+	.swiper-pagination-bullet {
+		position: relative;
+		inset: 0;
+		width: 100%;
+		max-width: 116px;
+		display: block;
+		border-radius: 5px;
+		background: rgba(139, 185, 231, 0.30);
+		opacity: 1;
+		transition: all 0.5s;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #FFAD99;
+	}
+}
+
+.section-title {
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	h2, h1 {
+		font-family: Montserrat;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		text-align: center;
+		@media(max-width: $md3) {
+			font-size: 28px;
+		}
+	}
+
+	p {
+		color: #FFF;
+		text-align: center;
+		font-family: Inter;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		@media(max-width: $md3) {
+			font-size: 16px;
+		}
+	}
+}
+
+.burger-btn {
+	width: 30px;
+	display: block;
+	padding: 0;
+	margin: 0;
+	background: unset;
+	position: relative;
+	span {
+		width: 100%;
+		height: 2px;
+		margin-bottom: 9px;
+		position: relative;
+		transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+		transform: rotate(0deg);
+		display: block;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&.close {
+		span {
+			margin: 0;
+			&:nth-child(1) {
+				transform: rotate(45deg);
+				top: 4px;
+			}
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+				top: 0;
+			}
+		}
+	}
+}

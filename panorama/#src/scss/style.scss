@@ -1,0 +1,467 @@
+@use "sass:math";
+@import "fonts";
+$fontFamily: "sans-serif";
+$fontSize: 16;
+
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1170px;
+$md1: $maxWidthContainer;
+$md2: 1024px;
+$md3: 768px;
+$md4: 480px;
+
+$mainColor: var(--color-white);
+$mainBackground: var(--color-storm-black);
+
+@import "null";
+body {
+	color: $mainColor;
+	font-size: $fontSize + px;
+	font-family: $fontFamily;
+	background-color: $mainBackground;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.container {
+	max-width: $maxWidthContainer;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+@import "ui";
+
+.page {
+	flex: 1 1 auto;
+}
+
+@import "./components/Header/header.scss";
+@import "./components/Footer/footer.scss";
+@import "./components/Main/style.scss";
+@import "./components/Categories/style.scss";
+@import "./components/About/style.scss";
+@import "./components/Advantages/style.scss";
+@import "./components/Contacts/style.scss";
+@import "./components/SearchList/style.scss";
+@import "./components/NumbersList/style.scss";
+@import "./components/Login/style.scss";
+@import "./components/Book/style.scss";
+@import "./components/Registration/style.scss";
+@import "./components/Gallery/style.scss";
+@import "./components/UserInfo/style.scss";
+@import "./components/UserMenu/style.scss";
+@import "./components/UserBooks/style.scss";
+
+@import "./uikit/NumberItem/style.scss";
+@import "./uikit/CategoryItem/style.scss";
+@import "./uikit/ContactLinks/style.scss";
+@import "./uikit/CallbackForm/style.scss";
+@import "./uikit/SearchForm/style.scss";
+
+
+
+.site-main { 
+	width: 100%;
+	padding: 60px 20px;
+	.post-68 { 
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 40px 20px;
+		.entry-header { 
+			width: 100%;
+			grid-column: 1 / 3;
+			.entry-title { 
+				font-family: Montserrat;
+				font-size: 48px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 100%;
+				color: var(--color-white);
+			}
+		}
+
+		.post-thumbnail { 
+			width: 100%;
+			.attachment-post-thumbnail { 
+				width: 100%;
+				height: 100%;
+				border-radius: 10px;
+				object-fit: cover;
+			}
+		}
+
+		.entry-content { 
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 10px;
+			width: 100%;
+			p { 
+				font-family: Montserrat;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 150%;
+				color: var(--color-white);
+			}
+
+			.mphb-details-title { 
+				font-family: Montserrat;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 150%;
+				color: var(--color-white);
+			}
+
+			.mphb-single-room-type-attributes { 
+				width: 100%;
+				.mphb-room-type-adults-capacity { 
+					width: 100%;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					gap: 10px;
+				}
+				.mphb-attribute-title { 
+					font-family: Montserrat;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 150%;
+					color: var(--color-white);
+					width: 80px;
+				}
+
+				.mphb-attribute-value { 
+					font-family: Montserrat;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 150%;
+					color: var(--color-white);
+				}
+
+				a { 
+					font-family: Montserrat;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 500;
+					text-decoration: underline;
+					line-height: 150%;
+					color: var(--color-white);
+				}
+				.mphb-room-type-children-capacity { 
+
+					.mphb-attribute-title { 
+
+					}
+
+					.mphb-attribute-value { 
+
+					}
+				}
+
+				.mphb-room-type-facilities { 
+
+					.mphb-attribute-title { 
+
+					}
+
+					.mphb-attribute-value { 
+
+						.facility-divan-krovat { 
+
+						}
+
+						.facility-krovat-queen-size { 
+
+							a { 
+								font-family: Montserrat;
+								font-size: 14px;
+								font-style: normal;
+								font-weight: 400;
+								line-height: 150%;
+								color: var(--color-white);
+							}
+						}
+
+						.facility-kuhnya { 
+
+							a { 
+
+							}
+						}
+
+						.facility-panoramnyj-vid-na-more { 
+
+							a { 
+
+							}
+						}
+
+						.facility-tehnicheskoe-osnashhenie { 
+
+							a { 
+
+							}
+						}
+					}
+				}
+
+				.mphb-room-type-categories { 
+
+					.mphb-attribute-title { 
+
+					}
+
+					.mphb-attribute-value { 
+
+						.category-standart { 
+
+							a { 
+
+							}
+						}
+					}
+				}
+			}
+
+			.mphb-regular-price { 
+
+				strong { 
+
+				}
+
+				.mphb-price { 
+
+					.mphb-currency { 
+
+					}
+				}
+
+				.mphb-price-period { 
+
+				}
+			}
+
+			.mphb-calendar-title { 
+
+			}
+
+			.mphb-calendar { 
+
+				.datepick { 
+
+					.datepick-nav { 
+
+						.datepick-cmd { 
+
+						}
+					}
+
+					.datepick-month-row { 
+
+						.datepick-month { 
+
+							.datepick-month-header { 
+
+								.datepick-month-year { 
+
+								}
+							}
+
+							table { 
+
+								thead { 
+
+									tr { 
+
+										th { 
+
+											.datepick-dow-1 { 
+
+											}
+										}
+									}
+								}
+
+								tbody { 
+
+									tr { 
+
+										td { 
+
+											.dp1743408000000 { 
+
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					.datepick-ctrl { 
+
+						.mphb-calendar__selected-dates { 
+
+						}
+
+						.datepick-cmd { 
+
+						}
+					}
+
+					.datepick-clear-fix { 
+
+					}
+				}
+			}
+
+			.mphb-reservation-form-title { 
+
+			}
+
+			.mphb-booking-form { 
+
+				.mphb-required-fields-tip { 
+
+					small { 
+
+						abbr { 
+
+						}
+					}
+				}
+
+				#mphb-checkout-nonce { 
+
+				}
+
+				input { 
+
+				}
+
+				.mphb-check-in-date-wrapper { 
+
+					label { 
+
+						abbr { 
+
+						}
+					}
+
+					br { 
+
+					}
+
+					.mphb-datepick { 
+
+					}
+
+					#mphb_check_in_date-67fd36a9a0d5f-hidden { 
+
+					}
+				}
+
+				.mphb-check-out-date-wrapper { 
+
+					label { 
+
+						abbr { 
+
+						}
+					}
+
+					br { 
+
+					}
+
+					.mphb-datepick { 
+
+					}
+
+					#mphb_check_out_date-67fd36a9a0d5f-hidden { 
+
+					}
+				}
+
+				.mphb-reserve-room-section { 
+
+					.mphb-rooms-quantity-wrapper { 
+
+						.mphb-rooms-quantity { 
+
+						}
+
+						.mphb-available-rooms-count { 
+
+						}
+					}
+
+					input { 
+
+					}
+
+					.button { 
+
+					}
+				}
+
+				.mphb-errors-wrapper { 
+
+				}
+
+				.mphb-reserve-btn-wrapper { 
+
+					.mphb-reserve-btn { 
+
+					}
+				}
+			}
+		}
+
+		.entry-footer { 
+
+		}
+	}
+
+	.navigation { 
+
+		.screen-reader-text { 
+
+		}
+
+		.nav-links { 
+
+			.nav-next { 
+
+				a { 
+
+					.nav-subtitle { 
+
+					}
+
+					.nav-title { 
+
+					}
+				}
+			}
+		}
+	}
+}

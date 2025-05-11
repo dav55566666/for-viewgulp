@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header bg bg-deep-ocean">
+  <div class="header__container container">
+    <div class="header__left">
+      <a href="/" class="logo">
+        <img src="img/logo.svg" alt="Logo" class="logo__img" />
+      </a>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">Номера</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">Галерия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__right flex center gap-10 between">
+      <div class="flex header__right-buttons gap-20">
+        <a
+          href=""
+          class="button bg bg-midnight-teal border-color border-color-midnight-teal color color-white"
+          >Войти</a
+        >
+        <a
+          href=""
+          class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean"
+          >Регистрация</a
+        >
+      </div>
+      <!-- <div class="header__right-userbtn">
+        <a href="" class="user color color-white">Андрей Тарасов</a>
+        <a href="" class="logout-btn bg bg-midnight-teal">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 15L15 12M15 12L12 9M15 12H4M9 7.24859V7.2002C9 6.08009 9 5.51962 9.21799 5.0918C9.40973 4.71547 9.71547 4.40973 10.0918 4.21799C10.5196 4 11.0801 4 12.2002 4H16.8002C17.9203 4 18.4796 4 18.9074 4.21799C19.2837 4.40973 19.5905 4.71547 19.7822 5.0918C20 5.5192 20 6.07899 20 7.19691V16.8036C20 17.9215 20 18.4805 19.7822 18.9079C19.5905 19.2842 19.2837 19.5905 18.9074 19.7822C18.48 20 17.921 20 16.8031 20H12.1969C11.079 20 10.5192 20 10.0918 19.7822C9.71547 19.5905 9.40973 19.2839 9.21799 18.9076C9 18.4798 9 17.9201 9 16.8V16.75"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div> -->
+      <button class="burger-btn">
+        <span class="bg bg-white"></span><span class="bg bg-white"></span
+        ><span class="bg bg-white"></span>
+      </button>
+    </div>
+    <div
+      class="header__mobile border-color border-color-white bg bg-deep-ocean"
+    >
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">Номера</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">Галерия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link color color-white">Контакты</a>
+        </li>
+      </ul>
+      <div class="header__mobile-buttons">
+        <a
+          href=""
+          class="button bg bg-midnight-teal border-color border-color-midnight-teal color color-white"
+          >Войти</a
+        >
+        <a
+          href=""
+          class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean"
+          >Регистрация</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
+
+			<main class="page">
+				<section class="number-list">
+    <div class="number-list__container container">
+      <div class="section-title">
+        <h1>Премиум +</h1>
+      </div>
+      <div class="number-list__result">
+          <div class="number-item bg bg-deep-ocean">
+    <div class="number-item__image">
+        <button class="slideprev bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-left"></use>
+            </svg>              
+        </button>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="slidenext bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="number-item__info">
+        <h4><a href="" class="color color-white">ПРЕМИУМ +</a></h4>
+        <div class="flex between gap-20">
+            <ul class="number-item-info-advantages">
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кровать Queen Size
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Диван-кровать
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Панорамный вид на море
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кухня
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Техническое оснащение
+                </li>
+            </ul>
+            <p class="description color color-white">
+                комфортабельный номер с кроватью Queen Size, диваном-кроватью, кухней и техническим оснащением. Главное преимущество – панорамный вид на море.
+            </p>
+        </div>
+        <div class="number-item__info-buttons flex">
+            <button class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean">Забронировать номер</button>
+            <button class="button bg bg-midnight-teal border-color border-color-midnight-teal color color-white">Галерия</button>
+        </div>
+    </div>
+</div>
+          <div class="number-item bg bg-deep-ocean">
+    <div class="number-item__image">
+        <button class="slideprev bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-left"></use>
+            </svg>              
+        </button>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="slidenext bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="number-item__info">
+        <h4><a href="" class="color color-white">Премиум +</a></h4>
+        <div class="flex between gap-20">
+            <ul class="number-item-info-advantages">
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кровать Queen Size
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Диван-кровать
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Панорамный вид на море
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кухня
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Техническое оснащение
+                </li>
+            </ul>
+            <p class="description color color-white">
+                комфортабельный номер с кроватью Queen Size, диваном-кроватью, кухней и техническим оснащением. Главное преимущество – панорамный вид на море.
+            </p>
+        </div>
+        <div class="number-item__info-buttons flex">
+            <button class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean">Забронировать номер</button>
+            <button class="button bg bg-midnight-teal border-color border-color-midnight-teal color color-white">Галерия</button>
+        </div>
+    </div>
+</div>
+          <div class="number-item bg bg-deep-ocean">
+    <div class="number-item__image">
+        <button class="slideprev bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-left"></use>
+            </svg>              
+        </button>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="slidenext bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="number-item__info">
+        <h4><a href="" class="color color-white">ПРЕМИУМ +</a></h4>
+        <div class="flex between gap-20">
+            <ul class="number-item-info-advantages">
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кровать Queen Size
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Диван-кровать
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Панорамный вид на море
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кухня
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Техническое оснащение
+                </li>
+            </ul>
+            <p class="description color color-white">
+                комфортабельный номер с кроватью Queen Size, диваном-кроватью, кухней и техническим оснащением. Главное преимущество – панорамный вид на море.
+            </p>
+        </div>
+        <div class="number-item__info-buttons flex">
+            <button class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean">Забронировать номер</button>
+            <button class="button bg bg-midnight-teal border-color border-color-midnight-teal color color-white">Галерия</button>
+        </div>
+    </div>
+</div>
+          <div class="number-item bg bg-deep-ocean">
+    <div class="number-item__image">
+        <button class="slideprev bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-left"></use>
+            </svg>              
+        </button>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="slidenext bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="number-item__info">
+        <h4><a href="" class="color color-white">Премиум +</a></h4>
+        <div class="flex between gap-20">
+            <ul class="number-item-info-advantages">
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кровать Queen Size
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Диван-кровать
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Панорамный вид на море
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кухня
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Техническое оснащение
+                </li>
+            </ul>
+            <p class="description color color-white">
+                комфортабельный номер с кроватью Queen Size, диваном-кроватью, кухней и техническим оснащением. Главное преимущество – панорамный вид на море.
+            </p>
+        </div>
+        <div class="number-item__info-buttons flex">
+            <button class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean">Забронировать номер</button>
+            <button class="button bg bg-midnight-teal border-color border-color-midnight-teal color color-white">Галерия</button>
+        </div>
+    </div>
+</div>
+          <div class="number-item bg bg-deep-ocean">
+    <div class="number-item__image">
+        <button class="slideprev bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-left"></use>
+            </svg>              
+        </button>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="slidenext bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="number-item__info">
+        <h4><a href="" class="color color-white">Премиум +</a></h4>
+        <div class="flex between gap-20">
+            <ul class="number-item-info-advantages">
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кровать Queen Size
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Диван-кровать
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Панорамный вид на море
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кухня
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Техническое оснащение
+                </li>
+            </ul>
+            <p class="description color color-white">
+                комфортабельный номер с кроватью Queen Size, диваном-кроватью, кухней и техническим оснащением. Главное преимущество – панорамный вид на море.
+            </p>
+        </div>
+        <div class="number-item__info-buttons flex">
+            <button class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean">Забронировать номер</button>
+            <button class="button bg bg-midnight-teal border-color border-color-midnight-teal color color-white">Галерия</button>
+        </div>
+    </div>
+</div>
+          <div class="number-item bg bg-deep-ocean">
+    <div class="number-item__image">
+        <button class="slideprev bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-left"></use>
+            </svg>              
+        </button>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="slidenext bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="number-item__info">
+        <h4><a href="" class="color color-white">ПРЕМИУМ +</a></h4>
+        <div class="flex between gap-20">
+            <ul class="number-item-info-advantages">
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кровать Queen Size
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Диван-кровать
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Панорамный вид на море
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кухня
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Техническое оснащение
+                </li>
+            </ul>
+            <p class="description color color-white">
+                комфортабельный номер с кроватью Queen Size, диваном-кроватью, кухней и техническим оснащением. Главное преимущество – панорамный вид на море.
+            </p>
+        </div>
+        <div class="number-item__info-buttons flex">
+            <button class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean">Забронировать номер</button>
+            <button class="button bg bg-midnight-teal border-color border-color-midnight-teal color color-white">Галерия</button>
+        </div>
+    </div>
+</div>
+          <div class="number-item bg bg-deep-ocean">
+    <div class="number-item__image">
+        <button class="slideprev bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-left"></use>
+            </svg>              
+        </button>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="slidenext bg bg-storm-black">
+            <svg width="10" height="16" viewBox="0 0 10 16">
+                <use href="img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="number-item__info">
+        <h4><a href="" class="color color-white">ПРЕМИУМ +</a></h4>
+        <div class="flex between gap-20">
+            <ul class="number-item-info-advantages">
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кровать Queen Size
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Диван-кровать
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Панорамный вид на море
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Кухня
+                </li>
+                <li class="color color-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#check-cicrle"></use>
+                    </svg>
+                    Техническое оснащение
+                </li>
+            </ul>
+            <p class="description color color-white">
+                комфортабельный номер с кроватью Queen Size, диваном-кроватью, кухней и техническим оснащением. Главное преимущество – панорамный вид на море.
+            </p>
+        </div>
+        <div class="number-item__info-buttons flex">
+            <button class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean">Забронировать номер</button>
+            <button class="button bg bg-midnight-teal border-color border-color-midnight-teal color color-white">Галерия</button>
+        </div>
+    </div>
+</div>
+      </div>
+      <div class="pagination">
+        <a class="prev bg bg-deep-ocean">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_78_649)">
+              <path
+                d="M3.84956 8.51445L11.1223 15.787C11.4063 16.071 11.8668 16.071 12.1508 15.7869C12.4348 15.5029 12.4348 15.0425 12.1507 14.7584L5.3923 8.00013L12.1508 1.24148C12.4348 0.957459 12.4348 0.497 12.1507 0.212976C12.0088 0.0709639 11.8226 -1.90735e-05 11.6365 -1.90735e-05C11.4504 -1.90735e-05 11.2642 0.0709639 11.1222 0.213024L3.84956 7.48594C3.71312 7.62233 3.63651 7.8073 3.63651 8.00017C3.63651 8.19305 3.71312 8.37807 3.84956 8.51445Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_78_649">
+                <rect
+                  width="16"
+                  height="16"
+                  fill="white"
+                  transform="matrix(-1 0 0 -1 16 16)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <div class="pages">
+          <a href="" class="color color-deep-ocean bg bg-golden-glow">1</a>
+          <a href="" class="color color-white bg bg-deep-ocean">2</a>
+          <a href="" class="color color-white bg bg-deep-ocean">3</a>
+        </div>
+        <a class="next bg bg-deep-ocean">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_78_666)">
+              <path
+                d="M12.1504 7.48555L4.87772 0.213012C4.59374 -0.0710121 4.13323 -0.0710121 3.84921 0.213061C3.56523 0.497085 3.56523 0.957546 3.84925 1.24157L10.6077 7.99987L3.84921 14.7585C3.56523 15.0425 3.56523 15.503 3.84925 15.787C3.99122 15.929 4.17735 16 4.36349 16C4.54962 16 4.73575 15.929 4.87776 15.787L12.1504 8.51406C12.2869 8.37767 12.3635 8.1927 12.3635 7.99983C12.3635 7.80695 12.2869 7.62193 12.1504 7.48555Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_78_666">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+				<section class="contacts bg bg-midnight-teal">
+    <div class="contacts__top">
+        <div class="contacts__container container">
+            <div class="section-title">
+                <h2 class="color color-white">Контакты</h2>
+            </div>
+            <div class="flex">
+                <div class="contact-links">
+    <h4 class="color color-white">Контакты</h4>
+    <a href="" class="contact-link color color-white">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#location"></use>
+        </svg>
+        Крым, г. Алушта, ул. Набережная, 18
+    </a>
+    <a href="" class="contact-link color color-white">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#mail"></use>
+        </svg>
+        info@hotel-alush.ru
+    </a>
+    <a href="" class="contact-link color color-white">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#phone"></use>
+        </svg>
+        +7 (978) 888-88-88
+    </a>
+    <div class="soc">
+        <a href="">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#vk"></use>
+            </svg>
+        </a>
+        <a href="">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#telegram"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+                <form action="" class="callback-form">
+    <h4 class="color color-white">Обратный звонок</h4>
+    <label class="input-text">
+        <input type="text" class="input border-color border-color-white" placeholder="Имя">
+    </label>
+    <label class="input-text">
+        <input type="text" class="input border-color border-color-white" placeholder="Телефона">
+    </label>
+    <button class="button bg bg-golden-glow border-color border-color-golden-glow color color-deep-ocean">Отправить</button>
+</form>
+            </div>
+        </div>
+    </div>
+    <div class="contacts__map">
+        <div class="map">
+            <iframe src="https://yandex.com/map-widget/v1/?ll=34.403050%2C44.653473&mode=whatshere&whatshere%5Bpoint%5D=34.403050%2C44.653473&whatshere%5Bzoom%5D=17&z=16"></iframe>
+        </div>
+    </div>
+</section>
+			</main>
+			<footer class="footer">
+    <div class="footer__top bg bg-deep-ocean">
+        <div class="footer__container container flex center">
+            <a href="/" class="footer__logo">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#" class="menu__link color color-white">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link color color-white">Номера</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link color color-white">О нас</a>
+                </li>
+                <li class="menu__item"> 
+                    <a href="#" class="menu__link color color-white">Галерия</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link color color-white">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    <div class="footer__bottom bg bg-marine-shadow">
+        <div class="footer__container container">
+            <p class="footer__copyright color color-white">© 2025. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://wowjs.uk/dist/wow.min.js"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+<script>new WOW().init();</script>
+	</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+  <title>Централизованная библиотечная система ивановского округа</title>
+  <meta charset="UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/img/favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/img/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/img/favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+    <div class="header__top">
+        <div class="header__container container">
+            <a href="/" class="logo">
+                <img src="/img/logo.svg" alt="">
+                <span>Централизованная <br> библиотечная система <br> ивановского округа</span>
+            </a>
+            <div class="header__top-contacts flex">
+                <a href="" class="contact-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <use xlink:href="/img/sprite.svg#icon-wp"></use>
+                    </svg>
+                    +7(996)460-02-06
+                </a>
+                <a href="" class="contact-link">График работы</a>
+                <a href="" class="contact-link">Контакты</a>
+                <div class="header__top-bts flex">
+                    <a href="" class="button no-bg">Продлить книгу</a>
+                    <a href="how-to-join.html" class="button">Стать читателем</a>
+                </div>
+            </div>
+            <button class="burger-btn">
+                <span></span>                 
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="header__container container">
+            <ul class="menu">
+                <li><a href="">О нас </a></li>
+                <li><a href="">Библиотеки</a></li>
+                <li><a href="events.html">Афиша</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">Краеведение</a></li>
+                <li><a href="libery-for-children.html">Бибилиотека детям</a></li>
+                <li><a href="">Руководителям</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__search">
+        <div class="header__container container">
+            <div class="flex">
+                <label for="" class="search-in">
+                    <select name="" id="">
+                        <option value="">по каталогу</option>
+                        <option value="">Библиотека 1</option>
+                        <option value="">Библиотека 2</option>
+                        <option value="">Библиотека 3</option>
+                    </select>
+                </label>
+                <label class="search-input"><input type="text" placeholder="Поиск по сайту"></label>
+                <button class="button">
+                    Поиск
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.37624 17.7525C6.89545 17.7525 4.7961 16.8931 3.07821 15.1743C1.36031 13.4555 0.500911 11.3561 0.500001 8.87624C0.49909 6.39636 1.35849 4.29701 3.07821 2.57821C4.79792 0.859403 6.89727 0 9.37624 0C11.8552 0 13.955 0.859403 15.6756 2.57821C17.3963 4.29701 18.2552 6.39636 18.2525 8.87624C18.2525 9.87767 18.0932 10.8222 17.7745 11.7098C17.4559 12.5974 17.0235 13.3826 16.4772 14.0654L24.1245 21.7127C24.3748 21.963 24.5 22.2816 24.5 22.6686C24.5 23.0555 24.3748 23.3741 24.1245 23.6245C23.8741 23.8748 23.5555 24 23.1686 24C22.7816 24 22.463 23.8748 22.2127 23.6245L14.5654 15.9772C13.8826 16.5235 13.0974 16.9559 12.2098 17.2745C11.3222 17.5932 10.3777 17.7525 9.37624 17.7525ZM9.37624 15.0213C11.0832 15.0213 12.5344 14.4241 13.7297 13.2297C14.925 12.0353 15.5222 10.5841 15.5213 8.87624C15.5204 7.16836 14.9232 5.71767 13.7297 4.52415C12.5362 3.33064 11.085 2.73297 9.37624 2.73115C7.66745 2.72933 6.21676 3.327 5.02415 4.52415C3.83155 5.72131 3.23388 7.17201 3.23115 8.87624C3.22842 10.5805 3.82609 12.0316 5.02415 13.2297C6.22222 14.4278 7.67292 15.025 9.37624 15.0213Z" fill="white"/>
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobile">
+        <ul class="menu">
+            <li><a href="">О нас </a></li>
+            <li><a href="">Библиотеки</a></li>
+            <li><a href="events.html">Афиша</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Краеведение</a></li>
+            <li><a href="libery-for-children.html">Бибилиотека детям</a></li>
+            <li><a href="">Руководителям</a></li>
+        </ul>
+        <div class="header__mobile-bts">
+            <a href="" class="button no-bg">Продлить книгу</a>
+            <a href="how-to-join.html" class="button">Стать читателем</a>
+        </div>
+    </div>
+</header>
+			<main class="page">
+				<div class="brendcrumbs">
+                    <div class="brendcrumbs__container container">
+                        <a href="">
+                            Главная
+                            <svg width="5" height="8" viewBox="0 0 5 8" >
+                                <use xlink:href="/img/sprite.svg#brendcrumbs-arrow-icon"></use>
+                            </svg>             
+                        </a>
+                        <span>Издательство</span>
+                    </div>
+                </div>
+				<section class="publishing">
+    <div class="publishing__container container">
+        <div class="publishing__title">
+            <h1>Издательская деятельность</h1>
+        </div>
+        <div class="publishing__content">
+            <div class="publishing__item">
+                <div class="publishing__item-text">
+                    <p>Издательская деятельность государственной библиотеки направлена на распространение знаний и сохранение культурного наследия. Библиотека публикует научные труды, краеведческие издания, библиографические указатели и каталоги своих фондов.</p>
+                </div>
+                <div class="publishing__item-text">
+                    <p>Особое внимание уделяется переизданию редких и ценных документов, а также поддержке местных авторов. Публикации библиотеки доступны как в печатном, так и в электронном виде, что обеспечивает широкий охват аудитории. Эта деятельность способствует развитию науки, образования и культуры в регионе и стране в целом.</p>
+                </div>
+            </div>
+            <div class="publishing__item">
+                <div class="publishing__item-img">
+                    <img src="/img/publishing.jpg" alt="">
+                </div>
+                <div class="publishing__item-text">
+                    <h3>Печать для компаний</h3>
+                    <p>Печать для бизнеса необходима для эффективной коммуникации с клиентами и партнёрами. Она включает в себя создание визиток, брошюр, листовок, каталогов и другой рекламной продукции. Качественная печать повышает узнаваемость бренда и формирует положительный имидж компании.</p>
+                    <p>Современные технологии печати позволяют создавать яркие и запоминающиеся материалы, привлекающие внимание целевой аудитории. Правильно разработанная и напечатанная продукция способствует увеличению продаж и укреплению позиций на рынке. Инвестиции в печатную продукцию — это вклад в развитие бизнеса.</p>
+                </div>
+            </div>
+            <div class="publishing__item">
+                <div class="publishing__item-text">
+                    <h3>Печать своей рукописи</h3>
+                    <p>Печать рукописей позволяет авторам представить свои произведения широкой публике. Она включает в себя подготовку текста к печати, вёрстку, дизайн обложки и непосредственно печать тиража. </p>
+                    <p>Этот процесс важен для писателей, желающих опубликовать свои романы, сборники стихов, научные работы или мемуары. Современные издательские платформы предлагают услуги печати по требованию, что позволяет избежать больших затрат на тираж. Печать рукописи — это важный шаг на пути к публикации и признанию автора.</p>
+                </div>
+                <div class="publishing__item-img">
+                    <img src="/img/publishing.jpg" alt="">
+                </div>
+            </div>
+            <div class="publishing__item">
+                <div class="publishing__item-img">
+                    <img src="/img/publishing.jpg" alt="">
+                </div>
+                <div class="publishing__item-text">
+                    <h3>Издательство детской литературы</h3>
+                    <p>Печать книг для детей играет важную роль в их развитии и образовании. Она включает создание ярких иллюстраций, понятного текста и прочной обложки, соответствующей возрасту ребёнка.</p>
+                    <p>Детские книги могут быть обучающими, развлекательными или познавательными, способствуя развитию воображения и любознательности. Важно использовать безопасные материалы и краски, чтобы книги были безопасны для маленьких читателей. Печать детских книг — это вклад в будущее поколение и развитие их любви к чтению.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <section class="productions">
+    <div class="productions__container container">
+        <h2>Произведения</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">    
+                <div class="swiper-slide">
+                    <div class="production-item">
+    <div class="production-item__img">
+        <img src="/img/publishing.png" alt="">
+    </div>
+    <div class="production-item__text">
+        <h3>Валерий Вощевоз</h3>
+        <p>Участники боевых действий и локальных конфликтов Ивановского района Амурской области</p>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="production-item">
+    <div class="production-item__img">
+        <img src="/img/publishing.png" alt="">
+    </div>
+    <div class="production-item__text">
+        <h3>Валерий Вощевоз</h3>
+        <p>Участники боевых действий и локальных конфликтов Ивановского района Амурской области</p>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="production-item">
+    <div class="production-item__img">
+        <img src="/img/publishing.png" alt="">
+    </div>
+    <div class="production-item__text">
+        <h3>Валерий Вощевоз</h3>
+        <p>Участники боевых действий и локальных конфликтов Ивановского района Амурской области</p>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="production-item">
+    <div class="production-item__img">
+        <img src="/img/publishing.png" alt="">
+    </div>
+    <div class="production-item__text">
+        <h3>Валерий Вощевоз</h3>
+        <p>Участники боевых действий и локальных конфликтов Ивановского района Амурской области</p>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="production-item">
+    <div class="production-item__img">
+        <img src="/img/publishing.png" alt="">
+    </div>
+    <div class="production-item__text">
+        <h3>Валерий Вощевоз</h3>
+        <p>Участники боевых действий и локальных конфликтов Ивановского района Амурской области</p>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="production-item">
+    <div class="production-item__img">
+        <img src="/img/publishing.png" alt="">
+    </div>
+    <div class="production-item__text">
+        <h3>Валерий Вощевоз</h3>
+        <p>Участники боевых действий и локальных конфликтов Ивановского района Амурской области</p>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <section class="order-book">
+    <div class="order-book__container container">
+        <div class="order-book__title">
+            <h2>Заказать книгу</h2>
+            <p>Чтобы рассчитать стоимость тиража свяжитесь с нами или заполните форму обратной связи.</p>
+        </div>
+        <form action="">
+            <div class="grid">
+                <label for="" class="input-text">
+                    <span class="input-title">Ваше имя *</span>
+                    <input type="text" class="input" placeholder="Иван Иванов">
+                </label>
+                <label for="" class="input-text">
+                    <span class="input-title">Тип бумаги *</span>
+                    <select name="" id="" class="input">
+                        <option value="">Выберите бумагу</option>
+                    </select>
+                </label>
+                <label for="" class="input-text">
+                    <span class="input-title">Формат книги *</span>
+                    <select name="" id="" class="input">
+                        <option value="">Выберите формат</option>
+                    </select>
+                </label>
+                <label for="" class="input-text">
+                    <span class="input-title">Контактный телефон *</span>
+                    <input type="text" class="input phone-mask" placeholder="+79160353400">
+                </label>
+                <label for="" class="input-text">
+                    <span class="input-title">Количество черно-белых страниц *</span>
+                    <input type="number" class="input" value="0">
+                </label>
+                <label for="" class="input-text">
+                    <span class="input-title">Тип обложки *</span>
+                    <select name="" id="" class="input">
+                        <option value="">Выберите обложку</option>
+                    </select>
+                </label>
+                <label for="" class="input-text">
+                    <span class="input-title">Электронная почта *</span>
+                    <input type="email" class="input" placeholder="ivanov@mail.ru">
+                </label>
+                <label for="" class="input-text">
+                    <span class="input-title">Общий тираж *</span>
+                    <input type="number" class="input" value="0">
+                </label>
+                <label for="" class="input-text">
+                    <span class="input-title">Количество цветных страниц *</span>
+                    <input type="number" class="input" value="0">
+                </label>
+            </div>
+            <div class="order-book__bottom">
+                <div class="order-book__bottom-content">
+                    <span class="total-price">Стоимость тиража:
+                        <span>180000 руб.</span>
+                    </span>
+                    <button type="submit" class="button">Получить расчет</button>
+                    <label class="checkbox">
+                        <input type="checkbox" name="agreement" id="agreement">
+                        <span class="checkbox-span"></span>
+                        <span class="checkbox-text">Я согласен на обработку персональных данных и с условиями политики конфиденциальности</span>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+</section> 
+			</main>
+			<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top">
+            <a href="/" class="logo">
+                <img src="/img/logo.svg" alt="">
+                <span>Централизованная <br> библиотечная система <br> ивановского округа</span>
+            </a>
+            <a href="" class="button">Стать читателем</a>
+        </div>
+        <div class="footer__center">
+            <div class="footer__center-item">
+                <ul>
+                    <li><a href="">О библиотеке</a></li>
+                    <li><a href="events.html">Афиша</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="">Проекты</a></li>
+                    <li><a href="publishing.html">Издательство</a></li>
+                </ul>
+            </div>
+            <div class="footer__center-item">
+                <ul>
+                    <li><a href="libery-for-children.html">Библиотека детям</a></li>
+                    <li><a href="">Краеведение</a></li>
+                    <li><a href="">Методическая копилка</a></li>
+                    <li><a href="">Конкурсы и игры</a></li>
+                </ul>
+            </div>
+            <div class="footer__center-item">
+                <ul>
+                    <li><a href="">Партнёры</a></li>
+                    <li><a href="">Противодействие коррупции</a></li>
+                    <li><a href="">Оценка качества услуг</a></li>
+                    <li><a href="">Обратная связь</a></li>
+                    <li><a href="">Библиотечные фонды</a></li>
+                </ul>
+            </div>
+            <div class="footer__center-item">
+                <ul>
+                    <li><span>Режим работы</span></li>
+                    <li><span>Пн.- Пт.: с 9:00 - 17:00</span></li>
+                    <li><span>Пн.- Пт.: с 9:00 - 17:00</span></li>
+                    <li><span>Последняя среда месяца — санитарный день</span></li>
+                </ul>
+            </div>
+            <div class="footer__center-item">
+                <ul>
+                    <li>
+                        <a href="" class="phone">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use href="/img/sprite.svg#white-wp-icon"></use>
+                            </svg>
+                            +7(996)460-02-06
+                        </a>
+                    </li>
+                    <li><a href="">ivmunlib@mail.ru</a></li>
+                    <li><span>Будьте в курсе новостей:</span></li>
+                    <li class="soc">
+                        <a href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use href="/img/sprite.svg#white-vk-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="23" height="24" viewBox="0 0 23 24">
+                                <use xlink:href="img/sprite.svg#rutube-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use href="/img/sprite.svg#white-tg-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="">Амурская область, с. Ивановка, ул. Ленина, 164</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="">Политика конфиденциальности</a>
+            <div class="stats">
+                <span>1349</span>
+                <span>786</span>
+                <span>708</span>
+                <span class="icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20">
+                        <use href="/img/sprite.svg#arrow-up-right-icon"></use>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://wowjs.uk/dist/wow.min.js"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+<script>new WOW().init();</script>
+	</body>
+</html>

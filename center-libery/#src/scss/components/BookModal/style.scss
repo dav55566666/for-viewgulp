@@ -1,0 +1,34 @@
+.book-modal {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &.book-modal--active {
+        display: flex;
+    }
+    .book-modal__container {
+        width: 100%;
+        max-width: 600px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        .close-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .search-result-item .search-result-item__content .search-result-item__details .date, .search-result-item .search-result-item__content .search-result-item__details .location, .search-result-item .search-result-item__content .search-result-item__details .entrance, .search-result-item .search-result-item__content .search-result-item__details .detail-span {
+            max-width: unset;
+        }
+        .flex {
+            justify-content: center;
+        }
+    }
+}

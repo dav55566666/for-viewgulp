@@ -1,0 +1,190 @@
+
+:root {
+	--black-text: #22120A;
+	--white-text: #FFF;
+	--pink-text: #FFAD99;
+	--blue-text: #0000FF;
+	--green-text: #00FF00;
+	--main-blue: #0C49B1;
+	--light-grey: #ECE9E9;
+	--light-blue: #6992D8;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	animation-duration: 1s;
+	outline: none;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	// outline: none;
+}
+a:focus,
+a:active {
+	// outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html {
+	font-size: #{$fontSize + px};
+}
+html,
+body {
+	height: 100%;
+	min-width: $minWidth;
+}
+body {
+	line-height: 1;
+	font-family: $fontFamily;
+	//text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: $fontFamily;
+	font-size: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+	background-color: inherit;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+//-webkit-overflow-scrolling: touch;
+/*
+&::-webkit-scrollbar {
+	display: none;
+}
+*/
+
+
+.flex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	&.center {
+		justify-content: center;
+		align-items: center;
+	}
+	&.between {
+		justify-content: space-between;
+	}
+	&.gap-10 {
+		gap: 10px;
+	}
+	&.gap-20 {
+		gap: 20px;
+	}
+	&.gap-30 {
+		gap: 30px;
+	}
+	&.gap-40 {
+		gap: 40px;
+	}
+	&.gap-50 {
+		gap: 50px;
+	}
+}
+
+.grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	&.column-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	&.column-4 {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	&.column-5 {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	&.gap-10 {
+		grid-gap: 10px;
+	}
+	&.gap-20 {
+		grid-gap: 20px;
+	}
+	&.gap-30 {
+		grid-gap: 30px;
+	}
+	&.gap-40 {
+		grid-gap: 40px;
+	}
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	border: 1px solid #FFF;
+	color: #FFF;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	&.height-40 {
+		height: 40px;
+	}
+	&.height-50 {
+		height: 50px;
+	}
+	&.height-70 {
+		height: 70px;
+	}
+	&.bg-pink {
+		background: #FFAD99;
+		border: unset;
+	}
+	&.padding-30 {
+		padding: 0 30px;
+	}
+	&.padding {
+		padding: 8px 20px;
+	}
+}

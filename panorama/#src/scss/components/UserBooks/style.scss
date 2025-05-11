@@ -1,0 +1,47 @@
+.user-info { 
+
+	.user-info__container { 
+
+		.user-info__content { 
+
+			.section-title { 
+
+				.color { 
+
+				}
+			}
+
+			.user-books__content { 
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                @media (max-width: $md3) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+				.user-books__item { 
+                    width: 100%;
+                    padding: 20px;
+                    border-radius: 10px;
+                    border: 1px solid #fff;
+					p { 
+                        color: #FFF;    
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 10px;
+                        margin-bottom: 10px;
+                        &:last-child { 
+                            margin-bottom: 0;
+                        }
+					}
+				}
+			}
+		}
+	}
+}

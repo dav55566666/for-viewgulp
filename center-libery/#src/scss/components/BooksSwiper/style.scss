@@ -1,0 +1,48 @@
+.books-swiper { 
+    width: 100%;
+    padding: 40px 20px;
+    @media(max-width: $md4) {
+        padding: 26px 16px;
+    }
+	.books-swiper__container { 
+		.books-swiper__title { 
+            width: 100%;
+            margin-bottom: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media(max-width: $md5) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                margin-bottom: 24px;
+            }
+			h2 { 
+                color: var(--Black-text, #22120A);
+                font-family: Oswald;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                @media(max-width: $md4) {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+			}
+		}
+
+		.swiper { 
+            width: 100%;
+			.swiper-wrapper { 
+				.swiper-slide { 
+                    width: 100%;
+                    margin-right: 40px;
+                    max-width: 190px;
+                    @media(max-width: $md3) {
+                        margin-right: 16px;
+                    }
+				}
+			}
+		}
+	}
+}

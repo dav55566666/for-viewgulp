@@ -1,0 +1,38 @@
+.user-info { 
+    width: 100%;
+    padding: 60px 20px;
+	.user-info__container { 
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 20px;
+		@media (max-width: $md2) {
+			flex-direction: column;
+		}
+		.user-info__content { 
+            width: 100%;
+            max-width: 764px;
+            padding: 20px;
+            border-radius: 10px;
+            @media (max-width: $md2) {
+                max-width: 100%;
+            }
+			.section-title { 
+                margin-bottom: 20px;
+                h1,h2 {
+                    text-align: left;
+                }
+			}
+
+			form { 
+                width: 100%;
+				.input-text { 
+                    margin-bottom: 16px;
+				}
+                .button { 
+                    margin-top: 40px;
+                }
+			}
+		}
+	}
+}

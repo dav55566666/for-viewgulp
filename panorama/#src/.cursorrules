@@ -1,0 +1,50 @@
+{
+  "$schema": "https://app.cursor.sh/cursorrules.schema.json",
+  "name": "David Gulp Project Rules",
+  "description": "Minimalistic and logical HTML/CSS/JS rules for a Gulp-based component project using BEM, SCSS, and vanilla JS with jQuery.",
+  "rules": [
+    {
+      "description": "Only use essential HTML tags: header, main, section, footer, div, table, thead, tbody, th, tr, td, ul, ol, li, a, button, input, p, span, textarea, select.",
+      "enforce": true
+    },
+    {
+      "description": "Follow the BEM block structure. Each section should contain a wrapper element with a '__container' and a 'container' class inside.",
+      "example": "<section class=\"block\"><div class=\"block__container container\">...</div></section>",
+      "enforce": true
+    },
+    {
+      "description": "Use component-based file structure with gulp-file-include. Each component has its own HTML and SCSS.",
+      "enforce": true
+    },
+    {
+      "description": "Write media queries directly inside elements using SCSS nesting. Use variables like $md1, $md2, $md3, etc.",
+      "example": "@media(max-width: $md3) { font-size: 18px; }",
+      "enforce": true
+    },
+    {
+      "description": "Keep SCSS code minimal and structured. Avoid '!important', do not overuse mixins. Prioritize readability and logic.",
+      "enforce": true
+    },
+    {
+      "description": "Use both flexbox and grid layout where appropriate. Do not add unnecessary classes or wrappers.",
+      "enforce": true
+    },
+    {
+      "description": "Use clean JavaScript with helper functions. Follow SOLID principles, especially DRY (Don't Repeat Yourself).",
+      "enforce": true
+    },
+    {
+      "description": "Always cache DOM elements in variables before using them. Avoid repeated querySelector or jQuery selectors.",
+      "example": "const btn = document.querySelector('.btn');",
+      "enforce": true
+    },
+    {
+      "description": "Prefer const and let over var. Use arrow functions when appropriate. Avoid console.log in production code.",
+      "enforce": true
+    },
+    {
+      "description": "Use vanilla JS and jQuery if needed. Do not use frameworks like React or Vue in this Gulp-based workflow.",
+      "enforce": true
+    }
+  ]
+}

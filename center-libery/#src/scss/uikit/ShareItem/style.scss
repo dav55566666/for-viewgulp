@@ -1,0 +1,15 @@
+.share-item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 4px;
+    span {
+        color: var(--Black-text, #22120A);
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+    }
+}

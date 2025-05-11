@@ -1,0 +1,28 @@
+.registration {
+    padding: 60px 20px;
+
+    .registration__container {
+        max-width: 500px;
+
+        .registration__form {
+            width: 100%;
+            padding: 40px 20px;
+            border-radius: 10px;
+            .section-title {
+                margin-bottom: 30px;
+            }
+
+            form {
+                width: 100%;
+
+                .input-text {
+                    margin-bottom: 16px;
+                }
+
+                .button {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

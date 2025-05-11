@@ -1,0 +1,214 @@
+.header { 
+    width: 100%;
+	.header__top { 
+        width: 100%;
+        padding: 20px 20px 0;
+		.header__container { 
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--light-grey);
+			@media(max-width: $md1)  {
+				padding-bottom: 12px;
+				gap: 16px;
+			}
+			@media(max-width: $md4) {
+				padding-bottom: 8px;
+			}
+
+			.header__top-contacts { 
+                width: 100%;
+                max-width: 738px;
+                align-items: center;
+                justify-content: space-between;
+                gap: 24px;
+				@media(max-width: $md1)  {
+					gap: 16px;
+					max-width: 650px;
+				}
+				@media(max-width: $md3) {
+					max-width: 500px;
+				}
+				@media(max-width: $md4) {
+					display: none;
+				}
+				.header__top-bts { 
+                    width: 100%;
+                    max-width: 336px;
+                    gap: 16px;
+                    align-items: center;
+                    justify-content: space-between;
+					@media(max-width: $md1)  {
+						max-width: 280px;
+					}
+					@media(max-width: $md3) {
+						flex-direction: column;
+						gap: 6px;
+						max-width: 130px;
+						.button {
+							height: 32px;
+						}
+					}
+				}
+			}
+
+			.burger-btn {
+				display: none;
+				@media(max-width: $md4) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.header__menu { 
+		width: 100%;
+		padding: 24px 20px 0;
+		@media(max-width: $md1)  {
+			padding: 16px 20px 0;
+		}
+		@media(max-width: $md4) {
+			display: none;
+		}
+		.header__container { 
+			padding-bottom: 24px;
+			border-bottom: 1px solid var(--light-grey);
+			@media(max-width: $md1)  {
+				padding-bottom: 16px;
+			}
+		}
+	}
+
+	.header__search { 
+		width: 100%;
+		padding: 24px 20px;
+		@media(max-width: $md1)  {
+			padding: 16px 20px;
+		}
+		.header__container { 
+
+			.flex { 
+				width: 100%;
+				justify-content: space-between;
+				align-items: stretch;
+				padding: 4px 4px 4px 16px;
+				border-radius: 10px;
+				border: 1px solid var(--light-grey);
+				background: var(--white);
+				@media(max-width: $md4) {
+					padding: 8px 12px;
+				}
+				.search-in { 
+					width: min-content;
+					max-width: 200px;
+					padding-right: 16px;
+					border-right: 1px solid var(--light-blue);
+					@media(max-width: $md4) {
+						display: none;
+					}
+					select { 
+						color: var(--black-text, #22120A);
+						font-family: "Roboto Condensed";
+						font-size: 14px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 130%;
+						height: 100%;
+					}
+				}
+
+				.search-input { 
+					width: 100%;
+
+					input { 
+						width: 100%;
+						background: unset;
+						border: unset;
+						color: var(--black-text, #22120A);
+						font-family: "Roboto Condensed";
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 130%;
+						padding: 0 16px;
+						height: 100%;
+						@media(max-width: $md4) {
+							padding: 0;
+						}
+					}
+				}
+
+				.button { 
+					min-width: 110px;
+					max-width: 110px;
+					@media(max-width: $md4) {
+						min-width: 24px;
+						max-width: 24px;
+						height: 24px;
+						background-color: unset;
+						justify-content: flex-end;
+						svg {
+							min-width: 24px;
+						}
+						svg path {
+							fill: #0C49B1!important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.header__mobile { 
+		position: absolute;
+		right: 0;
+		top: 80px;
+		padding: 16px 0;
+		z-index: 10;
+		background: linear-gradient(90deg, #284A85 11.63%, #6992D8 92.39%);
+		height: calc(100vh - 76px);
+		overflow-y: auto;
+		overflow-x: hidden;
+		transition: all 0.5s;
+		width: 0;
+		.menu { 
+			background-color: unset;
+			flex-direction: column;
+			padding: 0;
+			margin-bottom: 30px;
+			padding: 0 16px;
+			min-width: max-content;
+			li { 
+				a { 
+					color: var(--White, #FFF);
+					font-size: 16px;
+				}
+			}
+		}
+	
+		.header__mobile-bts { 
+			width: 100%;
+			padding: 0 16px;
+			min-width: max-content;
+			.button { 
+				width: 100%;
+				&:first-child { 
+					border-color: #FFF;
+					color: #FFF;
+					margin-bottom: 16px;
+				}
+				&:last-child { 
+					background-color: #FFF;
+					color: #0C49B1;
+				}
+			}
+		}
+		&.header__mobile--active { 
+			width: 100%;
+
+		}
+	}
+}

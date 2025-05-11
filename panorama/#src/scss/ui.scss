@@ -1,0 +1,268 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 48px;
+	border-radius: 6px;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 18px;
+	@media (max-width: $md3) {
+		height: 36px;
+		font-size: 14px;
+	}
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+
+	li {
+		a {
+			font-family: Montserrat;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 24px;
+		}
+	}
+}
+
+.bg {
+	&-white {
+		background: var(--color-white);
+	}
+
+	&-black {
+		background: var(--color-black);
+	}
+
+	&-mist-gray {
+		background: var(--color-mist-gray);
+	}
+
+	&-deep-ocean {
+		background: var(--color-deep-ocean);
+	}
+
+	&-golden-glow {
+		background: var(--color-golden-glow);
+	}
+
+	&-midnight-teal {
+		background: var(--color-midnight-teal);
+	}
+
+	&-slate-ink {
+		background: var(--color-slate-ink);
+	}
+
+	&-ivory-dust {
+		background: var(--color-ivory-dust);
+	}
+
+	&-storm-black {
+		background: var(--color-storm-black);
+	}
+
+	&-marine-shadow {
+		background: var(--color-marine-shadow);
+	}
+
+	&-silver-veil {
+		background: var(--color-silver-veil);
+	}
+}
+
+.color {
+	&-white {
+		color: var(--color-white);
+	}
+
+	&-black {
+		color: var(--color-black);
+	}
+
+	&-mist-gray {
+		color: var(--color-mist-gray);
+	}
+
+	&-deep-ocean {
+		color: var(--color-deep-ocean);
+	}
+
+	&-golden-glow {
+		color: var(--color-golden-glow);
+	}
+
+	&-midnight-teal {
+		color: var(--color-midnight-teal);
+	}
+
+	&-slate-ink {
+		color: var(--color-slate-ink);
+	}
+
+	&-ivory-dust {
+		color: var(--color-ivory-dust);
+	}
+
+	&-storm-black {
+		color: var(--color-storm-black);
+	}
+
+	&-marine-shadow {
+		color: var(--color-marine-shadow);
+	}
+
+	&-silver-veil {
+		color: var(--color-silver-veil);
+	}
+}
+
+.border-color {
+	border: 1px solid;
+	&-white {
+		border-color: var(--color-white);
+	}
+
+	&-black {
+		border-color: var(--color-black);
+	}
+
+	&-mist-gray {
+		border-color: var(--color-mist-gray);
+	}
+
+	&-deep-ocean {
+		border-color: var(--color-deep-ocean);
+	}
+
+	&-golden-glow {
+		border-color: var(--color-golden-glow);
+	}
+
+	&-midnight-teal {
+		border-color: var(--color-midnight-teal);
+	}
+
+	&-slate-ink {
+		border-color: var(--color-slate-ink);
+	}
+
+	&-ivory-dust {
+		border-color: var(--color-ivory-dust);
+	}
+
+	&-storm-black {
+		border-color: var(--color-storm-black);
+	}
+
+	&-marine-shadow {
+		border-color: var(--color-marine-shadow);
+	}
+
+	&-silver-veil {
+		border-color: var(--color-silver-veil);
+	}
+}
+
+.description {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 138%;
+	&.size-14 {
+		font-size: 14px;
+	}
+	@media (max-width: $md3) {
+		font-size: 14px;
+	}
+}
+
+.pagination {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	.prev, .next {
+		width: 26px;
+		height: 26px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 6px;
+		cursor: pointer;
+	}
+
+	.pages {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 6px;
+		a {
+			width: 20px;
+			height: 20px;
+			border-radius: 6px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			font-family: Montserrat;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 100%;
+		}
+	}
+}
+
+.input-text {
+	width: 100%;
+	display: block;
+	.input-title {
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		display: block;
+		margin-bottom: 14px;
+	}
+
+	.input {
+		border-radius: 6px;
+		height: 50px;
+		width: 100%;
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		padding: 0px 14px;
+		background-color: unset;
+		appearance: none;
+		&::placeholder {
+			color: #EAEAEA;
+		}
+	}
+}
+
+.map {
+	width: 100%;
+	border: unset;
+	height: 500px;
+	@media (max-width: $md2) {
+		height: 400px;
+	}
+	@media (max-width: $md3) {
+		height: 300px;
+	}
+}

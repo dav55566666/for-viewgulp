@@ -1,0 +1,99 @@
+.order-book {
+    width: 100%;
+    padding: 40px 20px 80px;
+
+    .order-book__container {
+        border-radius: 10px;
+        background: var(--Liner-blue, linear-gradient(90deg, #284A85 11.63%, #6992D8 92.39%));
+        padding: 40px 80px;
+        @media(max-width: $md1) {
+            padding: 40px;
+        }
+        @media(max-width: $md2) {
+            padding: 40px 20px;
+        }
+        .order-book__title {
+            width: 100%;
+            margin-bottom: 24px;
+
+            h2 {
+                color: var(--White, #FFF);
+                font-family: Oswald;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 32px;
+            }
+
+            p {
+                color: var(--White, #FFF);
+                font-family: "Roboto Condensed";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                @media(max-width: $md2) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        form {
+            width: 100%;
+
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px 40px;
+                margin-bottom: 16px;
+                @media(max-width: $md2) {
+                    gap: 8px 20px;
+                }
+                @media(max-width: $md3) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                @media(max-width: $md4) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+
+            .order-book__bottom {
+                display: flex;
+                justify-content: flex-end;
+                @media(max-width: $md3) {
+                    justify-content: flex-start;
+                }
+                .order-book__bottom-content {
+                    width: 100%;
+                    max-width: 426px;
+                }
+
+                .total-price {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 40px;
+                    margin-bottom: 16px;
+                    color: var(--White, #FFF);
+                    font-family: "Roboto Condensed";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 130%;
+
+                    span {
+                        font-family: Oswald;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 130%;
+                    }
+                }
+
+                .button {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
